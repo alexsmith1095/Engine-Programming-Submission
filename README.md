@@ -48,16 +48,33 @@ Some main gameplay mechanics include a top-down controlled player with shooting,
 
 * Zombie Death Particles - A particle effect that sprays a bunch of red cubes when a zombie is killed
 
+## Editor
+
+The scene 'Maths Example' contains a GameObject with a script attached. The script has 3 float value inputs that are then put into certain equations from the Maths code library and are displayed in the UI text elements in the scene.
+
+The zombie state classes utilise the AI class in the CustomFunctions code library. One example is the WanderState using 'GetRandomTargetPosition' and passing in the zombies current position and a random range as the float value. The function from the library can be seen below.
+
+```
+public static Vector3 GetRandomTargetPosition(Vector3 position, float distance)
+{
+    Vector3 randomDirection = Random.insideUnitSphere * distance;
+    randomDirection += position;
+    UnityEngine.NavMeshHit navMeshHit;
+    UnityEngine.NavMesh.SamplePosition(randomDirection, out navMeshHit, distance, -1);
+    return navMeshHit.position;
+}
+```
+
+The GameObject 'Level Generator' has a script attached to it that loops through the size of the level specified and places a number of cube prefabs as obstacles depending on the chance specified, with the lower number being a higher possibility.
+
 ## Credit
 
-* [**Alex Smith**](https://github.com/alexsmith1095)
+* [**Alex Smith**](https://github.com/alexsmith1095) - Created for a second year programming module for Computer & Video Games at University of Salford
 
-Created for a second year programming module for Computer & Video Games at University of Salford
+## Acknowledgments
+
+* [Sebastian Lague](https://www.youtube.com/user/Cercopithecan/) - For inspiration and teaching in-depth the majority of the principles used.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* [Sebastian Lague](https://www.youtube.com/user/Cercopithecan/) - For inspiration and teaching the majority of the principles used

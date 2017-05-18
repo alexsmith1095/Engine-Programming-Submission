@@ -1,0 +1,7 @@
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\obj\Debug\CustomFunctions.csprojResolveAssemblyReference.cache
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\bin\Debug\CustomFunctions.dll
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\bin\Debug\CustomFunctions.pdb
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\bin\Debug\UnityEngine.dll
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\bin\Debug\UnityEngine.xml
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\obj\Debug\CustomFunctions.dll
+c:\users\mvb909\documents\visual studio 2015\Projects\CustomFunctions\CustomFunctions\obj\Debug\CustomFunctions.pdb
